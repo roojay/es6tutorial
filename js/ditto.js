@@ -243,8 +243,8 @@ function li_create_linkage(li_tag, header_level) {
 }
 
 function create_banner(element) {
-  // 2021年2月18日
-  var deadline = new Date(2021, 1, 18);
+  // 2022年3月9日
+  var deadline = new Date(2022, 2, 9);
   if (deadline - (new Date()) < 0) return;
 
   var styleStr = [
@@ -258,10 +258,10 @@ function create_banner(element) {
     'color: #333333'
   ].join(';');
 
-  var text = '【免费资料】' +
-    '<span style="color: #4682BE;">Excel + Python + SQL 数据处理入门</span>，课程资料下载。';
+  var text = '【活动消息】' +
+    'AI 入门，人工智能四本名著——<span style="color: #4682BE;">《人工智能：一种现代方法》</span>、<span style="color: #4682BE;">《深度学习》</span>、<span style="color: #4682BE;">《动手学机器学习》</span>、<span style="color: #4682BE;">《流畅的 Python》</span>——正版学习资料免费领取！';
 
-  var banner = $('<a href="https://t.1yb.co/gXGw" style="color: #333333;" target="_blank"><div style="' + styleStr + '">' + text + '</div></a>')
+  var banner = $('<a href="https://wx.kaikeba.com/xiaoke/market/landing-page/v2/Y9x3zlctUWhoCB3YB8U?kol_ad_code=zhchVAUzJqFhWum1D8c" style="color: #333333;" target="_blank"><div style="' + styleStr + '">' + text + '</div></a>')
     .insertAfter(element);
 }
 
