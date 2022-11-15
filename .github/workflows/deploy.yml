@@ -11,6 +11,18 @@ jobs:
         with:
           ref: gh-pages
 
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
       - name: Copy Markdown Files
         run: |
           cp -f {README.md,cover_small.jpg} ./docs/
